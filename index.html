@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ООО "Система"</title>
+</head>
+<body>
+<header>
+    <h1>Добро пожаловать в нашу корпоративную организацию ООО "Система"</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#contact">Контакты</a></li>
+    </ul>
+</nav>
+<section id="about">
+    <h2>О нас</h2>
+    <p>Компания находится на рынке более 7 лет. Наши инженеры работают по всей территории РФ. Многолетний опыт и профессионализм, а также широкий охват территории позволяет нам работать с такими компаниями как М.Видео, Спортмастер, Почта России, Мегафон и т.д.</p>
+</section>
+<section id="services">
+    <h2>Услуги</h2>
+    <ul>
+        <li>
+            <h3>Слаботочные системы</h3>
+            <p>Монтаж слаботочных систем (СКУД, СКС, СОТ, СОТС, ОПС)</p>
+        </li>
+        <li>
+            <h3>Компьютерное оборудование</h3>
+            <p>Поставка и ремонт компьютерного оборудования</p>
+        </li>
+        <li>
+            <h3>Абонентское Обслуживание</h3>
+            <p>Абонентское обслуживание компьютеров и серверов</p>
+        </li>
+        <li>
+            <h3>Связь и телекоммуникации</h3>
+            <p>Обслуживание и поставка АТС и систем связи</p>
+        </li>
+        <li>
+            <h3>Видеонаблюдение</h3>
+            <p>Монтаж и обслуживание видеонаблюдения, систем контроля доступа</p>
+        </li>
+        <li>
+            <h3>Инвентаризация ИТ-активов</h3>
+            <p>Инвентаризация оборудования, расчет техподдержки и стоимости услуг.</p>
+        </li>
+        <li>
+            <h3>Обслуживание оргтехники</h3>
+            <p>Обслуживание расходными материалами, комплектующими ИТ-оборудования</p>
+        </li>
+        <li>
+            <h3>Разовые работы</h3>
+            <p>Осуществляем монтаж, комплектацию ИТ-оборудования любой сложности</p>
+        </li>
+    </ul>
+</section>
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Новосибирская область, г.Новосибирск,
+
+        ул. Ленинградская, 101/2  офис 14, 630008 тел. +7 (383) 30-47-555
+
+        e-mail : it-autsorsing@systemrf.ru</p>
+</section>
+<footer>
+    <p>&copy; 2023 ООО "Система"</p>
+</footer>
+</body>
+</html>
+<script>
+    // Обработчик события для плавной прокрутки
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: targetElement.offsetTop
+                });
+            }
+        });
+    });
+</script>

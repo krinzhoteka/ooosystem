@@ -1,0 +1,48 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Дополнительные стили по вашему усмотрению */
+
+/* Стили для мобильных устройств можно добавить */
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+    /* Другие стили для мобильных устройств */
+}
